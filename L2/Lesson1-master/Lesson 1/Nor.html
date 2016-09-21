@@ -1,0 +1,65 @@
+<html>
+<style>
+    td.menu{background-color:yellow;}
+    td.menu:hover{background-color:red;}
+  body {
+    background-color: white;
+}
+</style>
+<script type="text/javascript">
+function show_pic(){
+//alert('hi');
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='none';
+c2_elem.style.display='block';
+c3_elem.style.display='none';
+}
+function show_text(){
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display = 'block';
+c2_elem.style.display='none';
+c3_elem.style.display='none';
+}
+function show_pic1() {
+    //alert('hi');
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='none';
+c2_elem.style.display='none';
+c3_elem.style.display='block';
+}
+</script>
+<body>
+<h1> Norway</h1>
+<table width="100%" border=10 style="color:red">
+<tr>
+<td class="menu" id="m1" onclick="show_text()" width="33%"> About </td>
+<td id="m2" onclick="show_pic()" width="33%">image</td>
+<td id="m3" onclick="show_pic1()" width="33%"> questions</td> 
+</tr>
+<tr>
+<td colspan="3"> <div id="c1">
+Nor-......
+</div>
+
+<div id="c2">
+<img src="n.jpg">
+</div>
+<div id="c3">
+ffggf
+</div>
+</td>
+</tr>
+
+</table>
+
+
+
+
+</body>
+</html>
